@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Configuration OpenAI
-openai.api_key = "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"  # ⚠️ Remplacez par votre clé personnelle
+openai.api_key = st.secrets["OPENAI_API_KEY"]  # ⚠️ Remplacez par votre clé personnelle
 
 # Titre de la page
 st.set_page_config(page_title="Générateur de Hashtags IA pour Samantha Morgane Auteure", page_icon="📱")
